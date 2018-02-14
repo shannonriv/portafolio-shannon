@@ -1,9 +1,14 @@
 * {
-  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .min100vh {
   min-height: 100vh;
+}
+
+.vh90 {
+  height: 90vh;
 }
 
 a {
@@ -11,7 +16,7 @@ a {
 }
 
 a:hover {
-  color: lightcoral;
+  color: gainsboro;
 }
 
 /* Home */
@@ -21,4 +26,12 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
 }
