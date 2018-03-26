@@ -11,11 +11,7 @@
 }
 
 /* Header */
-/*
-nav {
-  border-bottom: 5px solid #54c3bd;
-}
-*/
+
 .bg-semi-clear {
   background-color: #ffffff;
 }
@@ -47,7 +43,7 @@ li {
 .text-hero {
   color: #ffffff;
   font-family: 'Playfair Display', serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 /*My story */
@@ -73,8 +69,8 @@ li {
 }
 
 .contact-img {
-  height: 300px;
-  width: 400px;
+  height: 250px;
+  width: 350px;
 }
 
 a.email {
@@ -106,4 +102,55 @@ a.email:hover {
 footer {
   background-color: #54c3bd;
   color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav li a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .text-hero {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+  }
+
+  .story-img,
+  .contact-img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  a.email {
+    color: #54c3bd;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  a.email:hover {
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #54c3bd;
+    padding: .5rem;
+    text-decoration: none;
+  }
+
+  .linkedin,
+  .github,
+  .curriculum {
+    height: 50px;
+    width: 50px;
+  }   
 }
