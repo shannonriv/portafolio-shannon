@@ -1,50 +1,41 @@
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .min100vh {
   min-height: 100vh;
 }
 
-.vh75 {
-  min-height: 75vh;
-}
-
-.vh70 {
-  min-height: 70vh;
-}
-
-a {
-  color: rgb(31, 30, 30);
-}
-
-hr {
-  border-bottom: 3px solid #66e0d2;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
-  width: 40%;  
-}
-
-.h4 {
-  font-family: 'Nixie One', cursive;
+.min90vh {
+  min-height: 90vh;
 }
 
 /* Header */
-
-.navbar-brand {
-  font-size: 2.5rem;
+/*
+nav {
+  border-bottom: 5px solid #54c3bd;
+}
+*/
+.bg-semi-clear {
+  background-color: #ffffff;
 }
 
-ul {
-  width: 100%;
+.navbar-brand {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.navbar-nav li a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 li {
-  display: inline-block;
-  width: 20%;
+  width: 30%;
 }
 
-/* Home */
+/* Hero image */
 
 .home-image {
   background-image: url('../assets/images/home.jpg');
@@ -53,47 +44,66 @@ li {
   background-size: cover;
 }
 
-.phrase-home {
+.text-hero {
   color: #ffffff;
-  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
 }
 
 /*My story */
 
 .content-story {
-  line-height: 2;
+  line-height: 1.6;
 }
 
 /* Portfolio */
 
-.wh-text {
-  color: #ffffff;
-}
-
-.proyect1 {
-  background-image: url('../assets/images/pattern1.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.proyect2 {
-  background-image: url('../assets/images/pattern2.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.proyect3 {
-  background-image: url('../assets/images/pattern3.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.text-project {
+  color: #54c3bd;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300 !important;
 }
 
 /* Contact */
 
+.text-contact {
+  color: #54c3bd;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300 !important;
+}
 
+.contact-img {
+  height: 300px;
+  width: 400px;
+}
+
+a.email {
+  color: #54c3bd;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+a.email:hover {
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #54c3bd;
+  padding: .8rem;
+  text-decoration: none;
+}
 
 /* Social Network */
 
+.linkedin,
+.github,
+.curriculum {
+  height: 100px;
+  width: 100px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #54c3bd;
+  color: #ffffff;
+}

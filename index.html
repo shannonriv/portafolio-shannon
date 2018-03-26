@@ -6,111 +6,158 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Fuentes -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300|Nixie+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700i" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <!-- Estilos del proyecto -->
   <link rel="stylesheet" href="css/main.css">
   <title>Portafolio</title>
 </head>
-<body class="min100vh">
+<body>
   <header>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col mt-3">
-          <a class="navbar-brand" href="#">Shannon Rivera</a>
-          <hr>        
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg my-3">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-      aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon py-1">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </span>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-semi-clear">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-          <li>
-            <a class="nav-link" href="#">Acerca de mí</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand col" href="#">SHANNON RIVERA</a>
+        <ul class="navbar-nav col mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#aboutme">Sobre mí</a>
           </li>
-          <li>
-            <a class="nav-link" href="#">Portafolio</a>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio">Portafolio</a>
           </li>
-          <li>
-            <a class="nav-link" href="#">Contacto</a>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <!-- Home -->
-  <div class="container">
-    <div class="row vh75">
-      <div class="col home-image p-4">
-        <p class="phrase-home text-center">"Mujer empoderada, aprendiz constante y líder en formación."</p>
+  <!-- Hero image -->
+  <div class="container-fluid">
+    <div class="row min100vh home-image">
+      <div class="col align-self-center">
+        <p class="text-hero text-center font-italic">UX Designer, mujer empoderada, aprendiz constante y con pasión por el baile</p>
       </div>
     </div>
   </div>
   <!-- My Story -->
-  <div class="container p-4">
-    <h2 class="text-center p-2">Mi historia</h2>
-    <hr>
-    <div class="row vh70 p-4 text-center">
-      <div class="col">
+  <div class="container" id="aboutme">
+    <div class="row min90vh py-4">
+      <div class="col align-self-center text-center">
         <img src="assets/images/photo.jpg" class="img-responsive" alt="">
       </div>
-      <div class="col">
-        <p class="content-story">Hola, soy Shannon Rivera, UX Designer por Laboratoria. Una de las cosas que más me gustan es conocer nuevas herramientas informáticas y mejorar las experiencias de los usuarios aplicando todo lo adquirido. Mi curiosidad y afán de aprender me han llevado a intentar nuevos retos. Quiero ser una excelente UX Designer y brindar lo mejor de mi cada día.</p>
+      <div class="col align-self-center">
+        <p class="content-story">
+          ¡Hola! <br>
+          Me llamo Shannon Rivera, vivo en Lima. Tengo 23 años. Soy Secretaria Ejecutiva de formación y ahora egresada como UX Designer de Laboratoria.
+          <br>
+          Desde que tengo uso de razón supe que quería dedicarme a ayudar y comprender a las personas y brindar mejores momentos, vivencias, recuerdos.
+          Me apasiona la danza, el deporte colectivo, la música y todo lo que tenga que ver con expresar y trabajar en conjunto.
+          <br>
+          He trabajado por dos años en empresas que me han permitido conocer más y de cerca a las personas. Todo lo que viví a través de mi profesión me 
+          impulsó a proponer soluciones eficientes a las necesidades de los clientes.
+          <br>
+          A raíz de todas las vivencias y mi afán de seguir aprendiendo, decidí buscar una oportunidad de desarrollo profesional y personal. Y fue así que 
+          ingresé a Laboratoria y aprendí a programar y al poco tiempo descubrí mi pasión: UX Design. Durante la especialidad, aprendí a conocer mejor a 
+          los usuarios y aplicar nuevas herramientas.
+          <br>
+          Considero que mi historia es una de perseverancia. De ir más allá de nuestros límites. De demostrar que es posible llegar tan lejos como te lo propongas.
+          <br>
+          Y mi historia no termina aquí...
+        </p>
       </div>
     </div>
   </div>
   <!-- Portfolio -->
-  <div class="container p-4">
-    <h2 class="text-center p-2">Portafolio</h2>
-    <hr>
-    <div class="row vh70 p-4 text-center">
-      <div class="col-sm-12 col-lg-4 proyect1">
-        <p class="wh-text">Labcar</p>
-      </div>
-      <div class="col-sm-12 col-lg-4 proyect2">
-        <p class="wh-text">Hackathon: Movie Geek</p>
-      </div>
-      <div class="col-sm-12 col-lg-4 proyect3">
-        <p class="wh-text">Reto UX: Empresa de buses</p>
+  <div class="container-fluid min90vh" id="portfolio">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="text-project py-4 font-italic">Mis proyectos</h2>
       </div>
     </div>
-    <div class="row p-4 text-center">
+    <div class="row pb-4">
       <div class="col">
-        <a href="#" class="btn btn-success">Ver más proyectos</a>          
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/images/pattern1.png" alt="proyecto1">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/images/pattern2.jpg" alt="proyecto2">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/images/pattern3.jpg" alt="proyecto3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
   <!-- Contact -->
-  <div class="container">
-    <h2 class="text-center">Trabajemos juntos</h2>      
-    <div class="row vh70 text-center my-4">
+  <div class="container min90vh" id="contact">
+    <div class="row text-center">
       <div class="col">
-        <p>El mundo tecnólogico está cambiando constantemente y necesitas a la mejor diseñadora de experiencia de usuario.</p>
-        <p>Contáctame para aprender cómo puedo ayudar a colaborar a tu organización para el futuro.</p>
-        <p>Escríbeme al:<a href="#" class="btn btn-success">shannonriv18@gmail.com</a></p>
+        <h2 class="text-contact py-4 font-italic">Trabajemos juntos</h2>
+      </div>
+    </div>
+    <div class="row text-center py-4">
+      <div class="col align-self-center">
+        <p>El mundo tecnológico está cambiando constantemente y necesitas una excelente diseñadora de 
+          experiencia de usuario. Contáctame para aprender cómo puedo ayudar a colaborar a tu organización 
+          para el futuro.
+        </p>
+        <br>
+        <br>
+         <a class="email" href="mailto:shannonriv18@gmail.com" role="button">shannonriv18@gmail.com</a>
+      </div>
+      <div class="col align-self-center">
+        <img src="assets/images/pattern4.jpg" class="contact-img" alt="contact-image">
+      </div>
+    </div>
+    <div class="row py-4 text-center">
+      <div class="col">
+        <a href="https://www.linkedin.com/in/shannonriv/" target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin">
+          <img src="assets/images/linkedin.png" class="linkedin" alt="linkedin">
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://github.com/shannonriv" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
+          <img src="assets/images/github.png" class="github" alt="github">
+        </a>
+      </div>
+      <div class="col">
+        <a href="doc/CV-SHANNON-RIVERA-V2-PDF.pdf" download="CV-SHANNON-RIVERA" data-toggle="tooltip" data-placement="top" title="Descargar CV">
+          <img src="assets/images/cv.png" class="curriculum" alt="CV">
+        </a>
       </div>
     </div>
   </div>
-  <!-- Social Network -->
-  <div class="container">
-    <div class="row text-center my-4">
-      <div class="col">
-        <a href="#" class="btn btn-success">boton fb</a>
-      </div>
-      <div class="col">
-        <a href="#" class="btn btn-success">boton linkedIn</a>          
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row py-3 mt-4">
+        <div class="col text-center">
+          <span>Hecho por Shannon Rivera, 2018</span>
+        </div>
       </div>
     </div>
-  </div>
- 
-   
+  </footer>
 
 
   <!-- jQuery -->
@@ -118,6 +165,28 @@
   <!-- Bootstrap -->
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <!-- Scripts del proyecto -->
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+    // Selectors
+    ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+    header: null, // Selector for fixed headers (must be a valid CSS selector)
+    // Speed & Easing
+    speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+    offset: 50, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    easing: 'easeInOutCubic', // Easing pattern to use
+    customEasing: function (time) {
+      // Function. Custom easing pattern
+      // If this is set to anything other than null, will override the easing option above
+      // return <your formulate with time as a multiplier>
+      // Example: easeInOut Quad
+      return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+    },
+    // Callback API
+    before: function (anchor, toggle) {}, // Callback to run before scroll
+    after: function (anchor, toggle) {} // Callback to run after scroll
+  });
+  </script>
   <script src="js/app.js"></script>
 </body>
 </html>
