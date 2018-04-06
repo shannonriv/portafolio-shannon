@@ -1,15 +1,27 @@
 * {
+  color: #7a7a7a;
   font-family: 'Montserrat', sans-serif;
 }
 
-.min100vh {
-  min-height: 100vh;
+.min10vh {
+  min-height: 10vh;
 }
 
 .min90vh {
   min-height: 90vh;
 }
 
+.min100vh {
+  min-height: 100vh;
+}
+
+a {
+  color: #7a7a7a;  
+}
+
+a:hover {
+  color: #d6d6d6;
+}
 /* Header */
 
 .bg-semi-clear {
@@ -17,24 +29,23 @@
 }
 
 .navbar-brand {
-  letter-spacing: 2px;
-  font-size: 2rem;
-}
-
-.navbar-nav li a {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
 }
 
-li {
-  width: 30%;
+.navbar-toggler-icon img {
+  color: #7a7a7a;
+}
+
+.navbar-nav li a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 /* Hero image */
 
 .home-image {
-  background-image: url('../assets/images/home.jpg');
+  background-image: url('../assets/images/hero.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,35 +53,71 @@ li {
 
 .text-hero {
   color: #ffffff;
-  font-family: 'Playfair Display', serif;
   font-size: 4rem;
+}
+
+.ux-title {
+  color: #ffffff;  
+  font-size: 2.5rem;
 }
 
 /*My story */
 
-.content-story {
-  line-height: 1.6;
-}
 
 /* Portfolio */
 
 .text-project {
   color: #54c3bd;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300 !important;
+}
+
+.ih-item.square {
+  border: none;
+  box-shadow: none;
+  height: auto;
+  width: auto;
+}
+
+.ih-item.square.effect6.colored .info h3 {
+  background: transparent;
+}
+
+.ih-item.square.effect6 .info h3 {
+  background: none;
+  font-size: 1.5rem;
+  margin: 65px 0 0;
+}
+
+.ih-item.square.effect6.colored .info {
+  background: rgba(93,198,193,1);
+  background: -moz-linear-gradient(-45deg, rgba(93,198,193,1) 0%, rgba(93,198,193,0.94) 40%, rgba(119,142,211,0.89) 76%, rgba(137,104,223,0.89) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(93,198,193,1)), color-stop(40%, rgba(93,198,193,0.94)), color-stop(76%, rgba(119,142,211,0.89)), color-stop(100%, rgba(137,104,223,0.89)));
+  background: -webkit-linear-gradient(-45deg, rgba(93,198,193,1) 0%, rgba(93,198,193,0.94) 40%, rgba(119,142,211,0.89) 76%, rgba(137,104,223,0.89) 100%);
+  background: -o-linear-gradient(-45deg, rgba(93,198,193,1) 0%, rgba(93,198,193,0.94) 40%, rgba(119,142,211,0.89) 76%, rgba(137,104,223,0.89) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(93,198,193,1) 0%, rgba(93,198,193,0.94) 40%, rgba(119,142,211,0.89) 76%, rgba(137,104,223,0.89) 100%);
+  background: linear-gradient(135deg, rgba(93,198,193,1) 0%, rgba(93,198,193,0.94) 40%, rgba(119,142,211,0.89) 76%, rgba(137,104,223,0.89) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dc6c1', endColorstr='#8968df', GradientType=1 );
+}
+
+.ih-item.square.effect6 .info p {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.non-action {
+  cursor: default;
+}
+
+.btn-info {
+  background-color: #54c3bd;
+  border: none;
 }
 
 /* Contact */
 
 .text-contact {
   color: #54c3bd;
-  font-family: 'Playfair Display', serif;
   font-weight: 300 !important;
-}
-
-.contact-img {
-  height: 250px;
-  width: 350px;
 }
 
 a.email {
@@ -93,14 +140,17 @@ a.email:hover {
 .linkedin,
 .github,
 .curriculum {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 /* Footer */
 
 footer {
   background-color: #54c3bd;
+}
+
+.white-txt {
   color: #ffffff;
 }
 
@@ -111,30 +161,23 @@ footer {
   }
 
   .navbar-nav li a {
-    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     letter-spacing: 1px;
   }
 
   .text-hero {
     color: #ffffff;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-
-  .story-img,
-  .contact-img {
-    height: 200px;
-    width: 200px;
-  }
-
-  .mobile-none {
-    display: none;
+  
+  .ux-title {
+    color: #ffffff;  
+    font-size: 2rem;
   }
 
   a.email {
     color: #54c3bd;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
   
@@ -150,7 +193,8 @@ footer {
   .linkedin,
   .github,
   .curriculum {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
   }   
 }
+

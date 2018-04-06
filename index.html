@@ -6,22 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Fuentes -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <!-- Estilos del proyecto -->
+  <link href="css/ihover.min.css" rel="stylesheet">  
   <link rel="stylesheet" href="css/main.css">
   <title>Portafolio</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-semi-clear">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand col" href="#">SHANNON RIVERA</a>
-        <ul class="navbar-nav col mr-auto mt-2 mt-lg-0 text-center">
+  <header class="min10vh">
+    <nav class="navbar fixed-top bg-semi-clear">
+      <a class="navbar-brand" href="#">SR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">          
+          <img src="assets/images/header-menu-icon.svg" alt="header menu icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#aboutme">Sobre mí</a>
           </li>
@@ -37,119 +39,125 @@
   </header>
   <!-- Hero image -->
   <div class="container-fluid">
-    <div class="row min100vh home-image">
+    <div class="row min90vh home-image">
       <div class="col align-self-center">
-        <p class="text-hero text-center font-italic">UX Designer, aprendiz constante y con pasión por el baile</p>
+        <p class="text-center">
+          <span class="text-hero font-weight-bold">SHANNON RIVERA</span><br><span class="ux-title">UX Designer apasionada por el usuario y el diseño</span>
+        </p>
       </div>
     </div>
   </div>
   <!-- My Story -->
   <div class="container" id="aboutme">
-    <div class="row">
-      <div class="col-lg-6 align-self-center pt-4 text-center">
-        <img src="assets/images/photo.jpg" class="img-responsive story-img" alt="profile-photo">
+    <div class="row min90vh">
+      <div class="col-sm-6 col-lg-6 align-self-center pt-4 text-center">
+        <img src="assets/images/aboutme-photo.jpg" class="img-responsive" alt="profile-photo">
       </div>
-      <div class="col-lg-6 align-self-center pt-4">
-        <p class="content-story">
-          ¡Hola! <br>
-          Me llamo Shannon Rivera, vivo en Lima. Tengo 23 años. Soy Secretaria Ejecutiva de formación y ahora egresada como UX Designer de Laboratoria.
-          <br>
-          Desde que tengo uso de razón supe que quería dedicarme a ayudar y comprender a las personas y brindar mejores momentos, vivencias, recuerdos.
-          Me apasiona la danza, el deporte colectivo, la música y todo lo que tenga que ver con expresar y trabajar en conjunto.
-          <br>
-          He trabajado por dos años en empresas que me han permitido conocer más y de cerca a las personas. Todo lo que viví a través de mi profesión me 
-          impulsó a proponer soluciones eficientes a las necesidades de los clientes.
-          <br>
-          A raíz de todas las vivencias y mi afán de seguir aprendiendo, decidí buscar una oportunidad de desarrollo profesional y personal. Y fue así que 
-          ingresé a Laboratoria y aprendí a programar y al poco tiempo descubrí mi pasión: UX Design. Durante la especialidad, aprendí a conocer mejor a 
-          los usuarios y aplicar nuevas herramientas.
-          <br>
-          Considero que mi historia es una de perseverancia. De ir más allá de nuestros límites. De demostrar que es posible llegar tan lejos como te lo propongas.
-          <br>
-          Y mi historia no termina aquí...
-        </p>
+      <div class="col-sm-6 col-lg-6 align-self-center pt-4">
+        <p class="py-1">Hola, soy Shannon Rivera.</p>
+        <p class="py-1">Tengo 23 años y vivo en Lima. Soy Secretaria Ejecutiva de formación y ahora egresada como 
+          UX Designer de Laboratoria.</p>
+        <p class="py-1">A raíz de mis experiencias personales y laborales, me di cuenta de que quería dedicarme a ayudar y comprender a las personas 
+            y es a través del UX Design que puedo lograr esto y proponer soluciones que hagan felices a los usuarios.</p>
+        <p class="py-1">Soy una persona empática, perseverante, responsable y con espíritu de trabajo en equipo.</p>
       </div>
     </div>
   </div>
   <!-- Portfolio -->
-  <div class="container-fluid" id="portfolio">
+  <div class="container-fluid min90vh" id="portfolio">
     <div class="row">
       <div class="col text-center">
-        <h2 class="text-project py-4 font-italic">Mis proyectos</h2>
+        <h2 class="text-project py-4">Mis Proyectos</h2>
       </div>
     </div>
-    <div class="row mb-4">
-      <div class="col">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner carousel-img">
-            <div class="carousel-item active">
-              <a href="https://github.com/shannonriv/reto-buses.git" target="_blank">
-                <img class="d-block w-100 min50vh" src="assets/images/viaggio.jpg" alt="project-viaggio">
-              </a>
+    <!-- boxes -->
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
+        <div class="ih-item square colored effect6 bottom_to_top">
+          <a class="non-action">
+            <div class="img">
+              <img src="assets/images/portfolio-bus.png" alt="proyecto1">
             </div>
-            <div class="carousel-item">
-              <a href="https://github.com/shannonriv/Banco-Digital.git" target="_blank">
-                <img class="d-block w-100" src="assets/images/banco digital.jpg" alt="proyect-digital-bank">
-              </a>
+            <div class="info align-middle">
+              <h3>VIAGGIO</h3>
+              <p>Viaggio es una plataforma online en el cual encontrarás la información que necesitas saber para viajar en bus en el Perú.</p>
             </div>
-            <div class="carousel-item">
-              <a href="https://github.com/shannonriv/roomandsoul.git" target="_blank">
-                <img class="d-block w-100" src="assets/images/roomandsoul.jpg" alt="proyect-room-and-soul">
-              </a>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
+        </div>
+        <div class="text-center my-3">
+          <a class="btn btn-info" href="https://marvelapp.com/2jgha7h" role="button">Ver demo</a>
+          <a class="btn btn-info" href="https://github.com/shannonriv/reto-buses" role="button">Leer más</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
+        <div class="ih-item square colored effect6 bottom_to_top">
+          <a class="non-action">
+            <div class="img">
+              <img src="assets/images/portfolio-movie.png" alt="proyecto2">
+            </div>
+            <div class="info">
+              <h3>MOVIE GEEK</h3>
+              <p>Movie Geek es una página web y aplicación móvil diseñada para el público geek con el fin de visualizar y guardar información de películas del género ciencia ficción, fantasía y superheroes.</p>
+            </div>
           </a>
+        </div>
+        <div class="text-center my-3">
+          <a class="btn btn-info" href="https://shannonriv.github.io/movie-geek/" role="button">Ver demo</a>
+          <a class="btn btn-info" href="https://github.com/shannonriv/movie-geek" role="button">Leer más</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
+        <div class="ih-item square colored effect6 bottom_to_top">
+          <a class="non-action">
+            <div class="img">
+              <img src="assets/images/portfolio-banco.png" alt="proyecto3">
+            </div>
+            <div class="info">
+              <h3>Banco 100% Digital</h3>
+              <p>Banco Digital es una aplicación móvil del Banco del País cuyo propósito es ser un banco 100% digital para millenials.</p>
+            </div>
+          </a>
+        </div>
+        <div class="text-center my-3">
+          <a class="btn btn-info" href="https://marvelapp.com/41f8318" role="button">Ver demo</a>
+          <a class="btn btn-info" href="https://github.com/shannonriv/Banco-Digital" role="button">Leer más</a>
         </div>
       </div>
     </div>
+    <!-- end boxes --> 
   </div>
   <!-- Contact -->
-  <div class="container" id="contact">
+  <div class="container min90vh" id="contact">
     <div class="row text-center">
-      <div class="col">
-        <h2 class="text-contact py-4 font-italic">Trabajemos juntos</h2>
+      <div class="col text-center">
+        <h2 class="text-contact py-4">Trabajemos juntos</h2>
       </div>
     </div>
-    <div class="row text-center py-4">
-      <div class="col-lg-6 align-self-center">
+    <div class="row text-center my-2 align-self-center">
+      <div class="col-lg-10 offset-lg-1 mb-4">
         <p>El mundo tecnológico está cambiando constantemente y necesitas una excelente diseñadora de 
           experiencia de usuario. Contáctame para aprender cómo puedo ayudar a colaborar a tu organización 
           para el futuro.
         </p>
-        <br>
-        <br>
-         <a class="email" href="mailto:shannonriv18@gmail.com" role="button">shannonriv18@gmail.com</a>
       </div>
-      <div class="col-lg-6 align-self-center">
-        <img src="assets/images/pattern4.jpg" class="contact-img mobile-none img-responsive" alt="contact-image">
+      <div class="col-lg-10 offset-lg-1 mb-4 text-center">
+        <a class="email" href="mailto:shannonriv18@gmail.com" role="button">shannonriv18@gmail.com</a>          
       </div>
     </div>
-    <div class="row py-4 text-center">
+    <div class="row my-4 text-center">
       <div class="col">
         <a href="https://www.linkedin.com/in/shannonriv/" target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin">
-          <img src="assets/images/linkedin.png" class="linkedin" alt="linkedin">
+          <img src="assets/images/contact-linkedin.png" class="linkedin" alt="linkedin">
         </a>
       </div>
       <div class="col">
         <a href="https://github.com/shannonriv" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
-          <img src="assets/images/github.png" class="github" alt="github">
+          <img src="assets/images/contact-github.png" class="github" alt="github">
         </a>
       </div>
       <div class="col">
         <a href="doc/CV-SHANNON-RIVERA-V2-PDF.pdf" download="CV-SHANNON-RIVERA" data-toggle="tooltip" data-placement="top" title="Descargar CV">
-          <img src="assets/images/cv.png" class="curriculum" alt="CV">
+          <img src="assets/images/contact-cv.png" class="curriculum" alt="CV">
         </a>
       </div>
     </div>
@@ -157,9 +165,9 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row py-3 mt-4">
+      <div class="row py-3">
         <div class="col text-center">
-          <span>Hecho por Shannon Rivera, 2018</span>
+          <span class="white-txt">Hecho por Shannon Rivera, 2018</span>
         </div>
       </div>
     </div>
