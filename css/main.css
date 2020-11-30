@@ -28,6 +28,7 @@ a {
 a:hover {
   color: #d6d6d6;
 }
+
 /* Header */
 
 .bg-semi-clear {
@@ -62,13 +63,19 @@ a:hover {
   font-size: 4rem;
 }
 
-.ux-title {
-  color: #ffffff;  
-  font-size: 2.5rem;
+.hero-title {
+  color: #ffffff;
 }
 
-/*My story */
+.subtitle-hero {
+  color: #ffffff;
+}
 
+hr {
+  border: 1px solid #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 /* Portfolio */
 
@@ -128,17 +135,14 @@ a:hover {
 
 a.email {
   color: #3CDBC0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 a.email:hover {
   border-radius: 10px;
-  color: #ffffff;
   cursor: pointer;
-  background-color: #3CDBC0;
   padding: .8rem;
-  text-decoration: none;
 }
 
 /* Social Network */
@@ -153,7 +157,11 @@ a.email:hover {
 /* Footer */
 
 footer {
-  background-color: #3CDBC0;
+  background-color: #000;
+}
+
+footer span {
+  font-size: 13px;
 }
 
 .white-txt {
