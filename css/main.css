@@ -77,6 +77,10 @@ hr {
   margin-bottom: 2rem;
 }
 
+.img-responsive {
+  width: fit-content;
+}
+
 /* Portfolio */
 
 .text-project {
