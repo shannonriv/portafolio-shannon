@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/sr.ico">
   <!-- Fuentes -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="vendors/bootstrap4/css/bootstrap.min.css">
   <!-- Estilos del proyecto -->
@@ -43,9 +43,13 @@
   <div class="container-fluid">
     <div class="row min90vh home-image">
       <div class="offset-lg-1 col-lg-6 align-self-center">
-        <h3 class="hero-title">
-          Hola, soy Shannon.<br><br>Diseñadora con más de 4 años de experiencia en el diseño y desarrollo de productos digitales con un enfoque de diseño centrado en el usuario. <br>
-        </h3>
+        <h4 class="hero-title">
+          Hola, soy Shannon.
+          <br><br>
+          <b>Diseñadora con más de 4 años de experiencia en el diseño y desarrollo de 
+            productos digitales con un enfoque de diseño centrado en el usuario.</b>
+            <br>
+        </h4>
         <hr>
         <h6 class="subtitle-hero">Cuando no estoy diseñando, aprendo nuevas habilidades como emprendimiento, inversión, productividad y más.</h6>
       </div>
@@ -53,14 +57,14 @@
   </div>
 
   <!-- My Story -->
-  <div class="container" id="aboutme">
-    <div class="row min90vh">
-      <div class="col-sm-6 col-lg-6 align-self-center pt-4 text-center">
-        <img src="assets/images/aboutme-circle.png" class="img-responsive" alt="profile-photo">
+  <div class="container mt-5 mb-5 pb-5" id="aboutme">
+    <div class="row">
+      <div class="col-sm-6 col-lg-3 align-self-center text-center">
+        <img src="assets/images/aboutme-circle.png" class="img-fluid" alt="profile-photo">
       </div>
-      <div class="col-sm-6 col-lg-6 align-self-center pt-4">
+      <div class="col-sm-6 col-lg-9 align-self-center pt-4">
         <p>
-          Bienvenido a este espacio donde podrás conocer un poco de mí y mis trabajos.
+          Bienvenido(a) a este espacio donde podrás conocer un poco de mí y mis trabajos.
           <br>
           <br>
           Siento pasión por las soluciones centradas en el ser humano y a lo largo de estos 4 años he aprendido mucho y he tenido la oportunidad de aplicar 
@@ -77,98 +81,67 @@
   </div>
 
   <!-- Portfolio -->
-  <div class="container-fluid min90vh" id="portfolio">
+  <div class="container-fluid mt-5 mb-5 pt-5 pb-5" id="portfolio">
     <div class="row">
       <div class="col text-center">
-        <h2 class="text-project py-4">Proyectos de diseño web</h2>
+        <h2 class="text-project py-4"><b>Proyectos de diseño web</b></h2>
       </div>
     </div>
-
     <!-- new projects -->
     <div class="row">
-      <div class="col-sm-6 col-lg-6 my-2 align-self-center">
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
         <div class="ih-item square colored effect6 bottom_to_top">
           <a class="non-action">
             <div class="img">
               <img src="assets/images/pres_exploratorio.png" alt="proyecto1">
             </div>
             <div class="info align-middle">
-              <h3>Exploratorios</h3>
-              <p>Los exploratorios de salud se realizaron con la finalidad de identificar y validar la posibilidad 
-                de digitalizar servicios de salud como Ambulancias, Buscador de salud y Comunicaciones SOS para lo 
+              <h3><b>Exploratorios</b></h3>
+              <p>Investigación realizada con la finalidad de identificar y validar la digitalización de
+                 servicios de salud como Ambulancias, Buscador de salud y Comunicaciones SOS para lo 
                 cual se realizaron entrevistas a profundidad semi estructuradas a usuarios con seguro de salud 
                 con o sin siniestros. 
               </p>
             </div>
           </a>
         </div>
-        <!--
         <div class="text-center my-3">
-          <a class="btn btn-info" href="https://marvelapp.com/2jgha7h" role="button">Ver demo</a>
-          <a class="btn btn-info" href="https://github.com/shannonriv/reto-buses" role="button">Leer más</a>
-        </div> -->
+          <a class="btn btn-info" href="https://www.figma.com/proto/EE142TfXJLI9uHCTPqlzJeoI/CV-y-portafolio?node-id=712%3A119&scaling=scale-down&page-id=711%3A106&starting-point-node-id=712%3A119" role="button">Leer más</a>
+        </div>
       </div>
-      <div class="col-sm-6 col-lg-6 my-2 align-self-center">
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
         <div class="ih-item square colored effect6 bottom_to_top">
           <a class="non-action">
             <div class="img">
               <img src="assets/images/pres_mad.png" alt="proyecto2">
             </div>
             <div class="info">
-              <h3>Médico a domicilio</h3>
-              <p>Es un servicio para clientes con seguros de salud individual o empresarial que 
-                necesitan atención por una urgencia solicitando a través de Mi Mundo Rímac que un 
-                médico vaya a su domicilio para su atención. 
+              <h3><b>Servicios de salud</b></h3>
+              <p>Digitalización de servicios de pólizas de salud ubicados en la zona privada de Rímac.
               </p>
             </div>
           </a>
         </div>
-        <!--
         <div class="text-center my-3">
-          <a class="btn btn-info" href="https://shannonriv.github.io/movie-geek/" role="button">Ver demo</a>
-          <a class="btn btn-info" href="https://github.com/shannonriv/movie-geek" role="button">Leer más</a>
-        </div> -->
-      </div>
-      <div class="col-sm-6 col-lg-6 my-2 align-self-center">
-        <div class="ih-item square colored effect6 bottom_to_top">
-          <a class="non-action">
-            <div class="img">
-              <img src="assets/images/pres_cdr.png" alt="proyecto3">
-            </div>
-            <div class="info">
-              <h3>Chofer de reemplazo</h3>
-              <p>Es un servicio que se ofrece a usuarios con seguro vehicular para situaciones en las 
-                que el cliente no puede conducir su vehículo. 
-              </p>
-            </div>
-          </a>
+          <a class="btn btn-info" href="https://www.figma.com/proto/EE142TfXJLI9uHCTPqlzJeoI/CV-y-portafolio?node-id=733%3A82&scaling=min-zoom&page-id=711%3A106&starting-point-node-id=733%3A82&show-proto-sidebar=1" role="button">Leer más</a>
         </div>
-        <!--
-        <div class="text-center my-3">
-          <a class="btn btn-info" href="https://marvelapp.com/41f8318" role="button">Ver demo</a>
-          <a class="btn btn-info" href="https://github.com/shannonriv/Banco-Digital" role="button">Leer más</a>
-        </div> -->
       </div>
-      <div class="col-sm-6 col-lg-6 my-2 align-self-center">
+      <div class="col-sm-6 col-lg-4 my-2 align-self-center">
         <div class="ih-item square colored effect6 bottom_to_top">
           <a class="non-action">
             <div class="img">
               <img src="assets/images/pres_independencia.png" alt="proyecto3">
             </div>
             <div class="info">
-              <h3>Landing Independencia</h3>
-              <p>La landing era el medio principal por la cual los potenciales clientes de Independencia podían 
-                realizar una solicitud para acceder a un préstamos rápido. La solicitud, verificación y desembolso 
-                se realizaba 100% en línea. 
+              <h3><b>Independencia</b></h3>
+              <p>Diseño de landing, mantenimiento de la web, desarrollo de plataforma para clientes y más para los clientes con y sin préstamo personal.  
               </p>
             </div>
           </a>
         </div>
-        <!--
         <div class="text-center my-3">
-          <a class="btn btn-info" href="https://marvelapp.com/41f8318" role="button">Ver demo</a>
-          <a class="btn btn-info" href="https://github.com/shannonriv/Banco-Digital" role="button">Leer más</a>
-        </div> -->
+          <a class="btn btn-info" href="https://www.figma.com/proto/EE142TfXJLI9uHCTPqlzJeoI/CV-y-portafolio?node-id=736%3A114&scaling=min-zoom&page-id=711%3A106&starting-point-node-id=736%3A114&show-proto-sidebar=1" role="button">Leer más</a>
+        </div>
       </div>
     </div>
 
@@ -229,31 +202,27 @@
   </div>
 
   <!-- Contact -->
-  <div class="container min90vh mt-5" id="contact">
-    <div class="row text-center">
+  <div class="container mt-5 mb-5 pt-5 pb-5" id="contact">
+    <div class="row">
       <div class="col text-center">
-        <h2 class="text-contact py-4">Trabajemos juntos</h2>
+        <h2 class="text-contact py-4"><b>Trabajemos juntos</b></h2>
       </div>
     </div>
     <div class="row text-center my-2 align-self-center">
-      <div class="col-lg-10 offset-lg-1 mb-4 text-center">
+      <div class="col-lg-10 offset-lg-1 mb-2 text-center">
         Puedes contactarme aquí: <a class="email" href="mailto:shannonriv18@gmail.com" role="button">shannonriv18@gmail.com</a>          
       </div>
     </div>
     <div class="row my-4 text-center">
       <div class="col">
-        <a href="https://www.linkedin.com/in/shannonriv/" target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin">
+        <a href="doc/CV_UXD_SHANNON_2022.pdf" download="CV-SHANNON-RIVERA" data-toggle="tooltip" data-placement="top" title="Descargar CV" class="mx-3 my-3">
+          <img src="assets/images/contact-cv.png" class="curriculum" alt="CV">
+        </a>
+        <a href="https://www.linkedin.com/in/shannonriv/" target="_blank" data-toggle="tooltip" data-placement="top" title="Linkedin" class="mx-3 my-3">
           <img src="assets/images/contact-linkedin.png" class="linkedin" alt="linkedin">
         </a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/shannonriv" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
+        <a href="https://github.com/shannonriv" target="_blank" data-toggle="tooltip" data-placement="top" title="Github" class="mx-3 my-3">
           <img src="assets/images/contact-github.png" class="github" alt="github">
-        </a>
-      </div>
-      <div class="col">
-        <a href="doc/CV_UXD_SHANNON_2022.pdf" download="CV-SHANNON-RIVERA" data-toggle="tooltip" data-placement="top" title="Descargar CV">
-          <img src="assets/images/contact-cv.png" class="curriculum" alt="CV">
         </a>
       </div>
     </div>
@@ -264,7 +233,7 @@
     <div class="container">
       <div class="row py-2">
         <div class="col text-center">
-          <span class="white-txt">Hecho por Shannon Rivera, actualizado en 2020</span>
+          <span class="white-txt">Hecho por Shannon Rivera, actualizado en 2022</span>
         </div>
       </div>
     </div>
