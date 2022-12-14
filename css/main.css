@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #888B8D;
+  font-family: 'Poppins', sans-serif;
+  color: #00143A;
 }
 
 .min10vh {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 hr {
-  border: 1px solid #fff;
+  border-top: 2px solid #fff;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -128,25 +128,29 @@ hr {
 .btn-info {
   background-color: #3CDBC0;
   border: none;
+  border-radius: 8px;
+}
+
+.btn-info:hover {
+  background-color: #00143A;
 }
 
 /* Contact */
 
 .text-contact {
   color: #54c3bd;
-  font-weight: 300 !important;
 }
 
 a.email {
-  color: #3CDBC0;
-  font-size: 1.2rem;
+  color: #00143A;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 a.email:hover {
   border-radius: 10px;
+  font-weight: bolder;
   cursor: pointer;
-  padding: .8rem;
 }
 
 /* Social Network */
@@ -154,14 +158,14 @@ a.email:hover {
 .linkedin,
 .github,
 .curriculum {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
 }
 
 /* Footer */
 
 footer {
-  background-color: #000;
+  background-color: #00143A;
 }
 
 footer span {
@@ -191,21 +195,6 @@ footer span {
   .ux-title {
     color: #ffffff;  
     font-size: 2rem;
-  }
-
-  a.email {
-    color: #54c3bd;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  
-  a.email:hover {
-    border-radius: 10px;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #3CDBC0;
-    padding: .5rem;
-    text-decoration: none;
   }
 
   .linkedin,
